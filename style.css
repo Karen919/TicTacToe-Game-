@@ -1,0 +1,95 @@
+:root{
+    --bgColor: rgb(64, 153, 189);
+    --bgColorHover: rgba(128, 102, 95, 0.782);
+      
+    --borderColor:  rgba(15, 15, 14, 0.752) ;
+}
+
+body {
+    /* font-family: 'Abril Fatface', cursive;
+font-family: 'Edu NSW ACT Foundation', cursive;
+ font-family: 'Fasthand', cursive;  */
+font-family: 'Fuzzy Bubbles', cursive; 
+/* font-family: 'Kanit', sans-serif; */
+/* font-family: 'Noto Sans SC', sans-serif;
+ font-family: 'Open Sans', sans-serif; */
+/* font-family: 'Oswald', sans-serif;
+font-family: 'Roboto', sans-serif;   */
+background-color: var(--bgColor);
+}
+
+.conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.boxs {
+    padding: 60px;
+    width: 349px;
+    height: 303px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    border-right: 6px var(--borderColor) solid;
+    border-bottom: 6px var(--borderColor) solid;
+}
+
+.box:nth-child(3n) {
+    border-right: none;
+}
+
+.box:nth-child(6) ~ .box {
+    border-bottom: none;
+}
+.box:hover {
+    background-color:var(--bgColorHover) ;
+}
+
+button {
+    background-color:var(--borderColor);
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 19px;
+    color: aliceblue;
+    display: inline;
+    margin: 3px;
+    
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+
+@media (max-width:490px) {
+    .boxs {
+        padding: 30px;
+        width: 250px;
+        height: 250px;
+    }
+    .box {
+        width: 79px;
+        height: 79px;
+        font-size: 40px;
+        
+    }
+    button {
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+
+    }
+}

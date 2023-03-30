@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Edu+NSW+ACT+Foundation&family=Fasthand&family=Fuzzy+Bubbles:wght@400;700&family=Kanit:wght@600&family=Noto+Sans+SC:wght@100&family=Open+Sans:ital,wght@1,800&family=Oswald:wght@300&family=Roboto:ital,wght@0,700;0,900;1,100;1,300&display=swap" rel="stylesheet">
+</head>
+<body id="body">
+    <div class="conteiner" > 
+        <h1>TIC TAC TOE</h1>
+        <div>   <button id="resWalues">Reset Values</button>
+                <button id="resWins">Reset Wins</button>
+                <button id="theme">Change Theme</button>
+        </div>
+        <div id="boxs" class="boxs">
+            <div data-num="1" class="box" id="0"></div>
+            <div data-num="2" class="box" id="1"></div>
+            <div data-num="3" class="box" id="2"></div>
+            <div data-num="4" class="box" id="3"></div>
+            <div data-num="5" class="box" id="4"></div>
+            <div data-num="6" class="box" id="5"></div>
+            <div data-num="7" class="box" id="6"></div>
+            <div data-num="8" class="box" id="7"></div>
+            <div data-num="9" class="box" id="8"></div>
+        </div>
+        <div>
+            <h1>X wins- <span id="xWin"></span></h1>
+            <h1>O wins- <span id="oWin"></span></h1>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
